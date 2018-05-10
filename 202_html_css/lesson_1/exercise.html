@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>text-formatting</title>
+    <style>
+    body {
+      /* font-family: Tahoma, "Trebuchet MS", Verdana, sans-serif;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 2.5; */
+      font: italic bold 20px/2.5 Verdana, "Trebuchet MS", Tahoma, sans-serif;
+      /* text-align: justify; */
+      /* text-indent: 4em; */
+    }
+    article {
+      text-indent: 0em;
+      font: 14px/1.5 Helvetica, Arial, sans-serif;
+    }
+
+    article p {
+      font: Verdana, "Trebuchet MS", Tahoma, sans-serif;
+    }
+    article h1 {
+      font-family: Georgia, serif;
+      color: blue;
+    }
+
+    article code {
+      font-family: monospace;
+      font-style: italic;
+      text-decoration: underline;
+      color: green;
+    }
+    footer {
+      font-size: 18px;
+    }
+    footer mark {
+      background-color: yellow;
+      font-size: 12px;
+      font-family: Courier, monospace;
+    }
+    footer strong {
+      font-size: 15px;
+    }
+    footer em {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    .hyperlinks a {
+      color: red;
+      text-decoration: none;
+    }
+    </style>
+  </head>
+<body>
+  <p>A single paragraph of text.</p>
+
+
+<article>
+  <header>
+    <h1>Finessing `feColorMatrix`</h1>
+  </header>
+  <p>
+    Harness the power of <code>feColorMatrix</code> to create detailed
+    filters, with Una Kravets as your guide.
+  </p>
+</article>
+
+<div class="hyperlinks">
+  <p>
+    The Creating Hyperlinks section of
+    <a
+    href="http://learn.shayhowe.com/html-css/getting-to-know-html/#creating-hyperlinks"
+    target="_blank">
+      Getting to Know HTML
+    </a> discusses hyperlinks, or anchors. Be sure to work both "In Practice"
+    sections; they pick up from where you left off in an earlier reading
+    assignment.
+  </p>
+</div>
+
+<footer>
+  <p>That episode was <mark>un<strong>be<em>lieve</em></strong>able</mark>!</p>
+</footer>
+</body>
+</html>
