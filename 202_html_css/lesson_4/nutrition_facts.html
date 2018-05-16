@@ -5,210 +5,266 @@
     <title>Nutrition Facts Project</title>
     <style>
       body {
+        padding: 0;
+        margin: 0;
         font-family: "Helvetica Black", Helvetica, Arial;
-        font-size: 25px;
+        font-size: 28px;
+      }
+
+      section {
+        display: inline=block;
+        margin: 8px;
+        padding: 8px 13px;
+        border: 2px solid black;
+        width: 650px;
       }
 
       table {
         margin: 2px;
-        outline: 2px solid black;
-        padding: 6px;
-        border-collapse: separate;
-        border-spacing: 0;
-        /* border: 2px solid black; */
+        padding-left: 0 6px;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 16;
       }
 
-      h1 {
-        font-family: "Franklin Gothic Heavy";
-        margin: 0;
+      thead th { /* Nutrition Facts heading */
+        text-align: left;
+        font-size: 3.5rem;
+        font-weight: 900;
+        padding: 0;
       }
 
-      td {
-        border-bottom: 1px solid black;
+      thead td:empty { /* First black bar */
+        border-bottom: 30px solid black;
       }
 
-      td:empty {
+      tbody tr:nth-child(-n+2) td { /* Padding between top two black bars */
+        padding-top: 8px;
+        padding-bottom: 4px;
+      }
+
+      tbody tr:nth-child(4) td { /* Padding for %Daily value* liine */
+        padding-top: 9px;
+      }
+
+      tbody tr:nth-child(3) td:empty { /* Second black bar */
+        border-bottom: 15px solid black;
+      }
+
+      tbody tr:nth-child(14) td:empty { /* Third black bar */
         border-bottom: 20px solid black;
       }
 
-      thead th:nth-child(1) {
-        font-size: 3em;
-        padding: 0;
-        /* font-weight: bold; */
+      tbody td:not(:empty) { /* All the body bottom solid lines */
+        padding: 2px;
+        border-bottom: 1px solid black;
       }
 
-      tfoot
+      tbody tr:nth-child(2) td,
+      tbody tr:nth-child(13) td { /* Removal of excess bottom-borders */
+        border-bottom: none;
+      }
+
+      tbody tr:nth-child(4) td,
+      tbody td:nth-child(2) { /* % aligned to the right */
+        text-align: right;
+      }
+
+      tfoot td {  /* Footer text font size */
+        font-size: .80em;
+        padding: 2px;
+      }
+
+      tfoot tr:nth-child(-n+3) { /* PDV text */
+        font-size: 1.1em;
+      }
+
+      tfoot tr:nth-child(1) td { /* PDV text top padding */
+        padding-top: 12px;
+      }
+
+      tfoot tr:nth-of-type(3) td { /* PDV text bottom badding */
+        padding-bottom: 8px;
+      }
+
+      tfoot tr:nth-child(4) td { /* Lower Calorie Line */
+        border-bottom: 1px solid black;
+      }
 
     </style>
   </head>
+
   <body>
-    <table>
-      <thead>
-        <tr>
-          <th colspan="4">
-            Nutrition Facts
-          </th>
-        </tr>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">
+              Nutrition Facts
+            </th>
+          </tr>
 
-        <tr>
-          <td colspan="4">Serving Size 2/3 cup (55g)</td>
-        </tr>
+          <tr>
+            <td colspan="4">Serving Size 2/3 cup (55g)</td>
+          </tr>
 
-        <tr>
-          <td colspan="4">Servings Per Container About 8</td>
-        </tr>
+          <tr>
+            <td colspan="4">Servings Per Container About 8</td>
+          </tr>
 
-        <tr>
-          <td colspan="4"></td><!-- Large black line here -->
-        </tr>
-      </thead>
+          <tr>
+            <td colspan="4"></td><!-- Large black line here -->
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr>
-          <td colspan="4"><strong>Amount Per Serving</strong></td>
-        </tr>
+        <tbody>
+          <tr>
+            <td colspan="4"><strong>Amount Per Serving</strong></td>
+          </tr>
 
-        <tr>
-          <td colspan="2"><strong>Calories</strong> 230</td>
-          <td colspan="2">Calories from Fat 40</td>
-        </tr>
+          <tr>
+            <td colspan="2"><strong>Calories</strong> 230</td>
+            <td colspan="2">Calories from Fat 40</td>
+          </tr>
 
-        <tr>
-          <td></td><!-- Large black line here -->
-        </tr>
+          <tr>
+            <td colspan="4"></td><!-- Large black line here -->
+          </tr>
 
-        <tr>
-          <td colspan="4"><strong>% Daily Value*</strong></td>
-        </tr>
+          <tr>
+            <td colspan="4"><strong>% Daily Value*</strong></td>
+          </tr>
 
-        <tr>
-          <td colspan="3"><strong>Total Fat</strong> 8g</td>
-          <td><strong>12</strong>%</td>
-        </tr>
+          <tr>
+            <td colspan="3"><strong>Total Fat</strong> 8g</td>
+            <td><strong>12</strong>%</td>
+          </tr>
 
-        <tr>
-          <td colspan="3">&emsp;Saturated Fat 1g</td>
-          <td><strong>5</strong>%</td>
-        </tr>
+          <tr>
+            <td colspan="3">&emsp;Saturated Fat 1g</td>
+            <td><strong>5</strong>%</td>
+          </tr>
 
-        <tr>
-          <td colspan="4">&emsp;<em>Trans</em> Fat 0g</td>
-        </tr>
+          <tr>
+            <td colspan="4">&emsp;<em>Trans</em> Fat 0g</td>
+          </tr>
 
-        <tr>
-          <td colspan="3"><strong>Cholesterol</strong> 0mg</td>
-          <td><strong>0</strong>%</td>
-        </tr>
+          <tr>
+            <td colspan="3"><strong>Cholesterol</strong> 0mg</td>
+            <td><strong>0</strong>%</td>
+          </tr>
 
-        <tr>
-          <td colspan="3"><strong>Sodium</strong> 160mg</td>
-          <td><strong>7</strong>%</td>
-        </tr>
+          <tr>
+            <td colspan="3"><strong>Sodium</strong> 160mg</td>
+            <td><strong>7</strong>%</td>
+          </tr>
 
-        <tr>
-          <td colspan="3"><strong>Total Carbohydrate</strong> 37g</td>
-          <td><strong>12</strong>%</td>
-        </tr>
+          <tr>
+            <td colspan="3"><strong>Total Carbohydrate</strong> 37g</td>
+            <td><strong>12</strong>%</td>
+          </tr>
 
-        <tr>
-          <td colspan="3">&emsp;Dietary Fiber 4g</td>
-          <td><strong>16</strong>%</td>
-        </tr>
+          <tr>
+            <td colspan="3">&emsp;Dietary Fiber 4g</td>
+            <td><strong>16</strong>%</td>
+          </tr>
 
-        <tr>
-          <td colspan="4">&emsp;Sugars 1g</td>
-        </tr>
+          <tr>
+            <td colspan="4">&emsp;Sugars 1g</td>
+          </tr>
 
-        <tr>
-          <td colspan="4"><strong>Protein</strong> 3g</td>
-        </tr>
+          <tr>
+            <td colspan="4"><strong>Protein</strong> 3g</td>
+          </tr>
 
-        <tr>
-          <td></td><!-- Large black line here -->
-        </tr>
+          <tr>
+            <td colspan="4"></td><!-- Large black line here -->
+          </tr>
 
-        <tr>
-          <td colspan="3">Vitamin A</td>
-          <td>10%</td>
-        </tr>
+          <tr>
+            <td colspan="3">Vitamin A</td>
+            <td>10%</td>
+          </tr>
 
-        <tr>
-          <td colspan="3">Vitamin C</td>
-          <td>8%</td>
-        </tr>
+          <tr>
+            <td colspan="3">Vitamin C</td>
+            <td>8%</td>
+          </tr>
 
-        <tr>
-          <td colspan="3">Calcium</td>
-          <td>20%</td>
-        </tr>
+          <tr>
+            <td colspan="3">Calcium</td>
+            <td>20%</td>
+          </tr>
 
-        <tr>
-          <td colspan="3">Iron</td>
-          <td>45%</td>
-        </tr>
+          <tr>
+            <td colspan="3">Iron</td>
+            <td>45%</td>
+          </tr>
+        </tbody>
 
-        <tr>
-          <td colspan="4">* Percent Daily Values are based on a 2,000 calorie diet.</td>
-          <!--Watch Alignment with next rows-->
-        </tr>
+        <tfoot>
+          <tr>
+            <td colspan="4">* Percent Daily Values are based on a 2,000 calorie diet.</td>
+            <!--Watch Alignment with next rows-->
+          </tr>
 
-        <tr>
-          <td colspan="4">&ensp;Your daily value may be higher or lower depending on</td>
-        </tr>
+          <tr>
+            <td colspan="4">&ensp;Your daily value may be higher or lower depending on</td>
+          </tr>
 
-        <tr>
-          <td colspan="4">&ensp;your calorie needs.</td>
-        </tr>
-      </tbody>
+          <tr>
+            <td colspan="4">&ensp;your calorie needs.</td>
+          </tr>
 
-      <tfoot>
-        <tr>
-          <!-- <td></td> -->
-          <td colspan="2">Calories:</td>
-          <td>2,000</td>
-          <td>2,500</td>
-        </tr>
+          <tr>
+            <td>&ZeroWidthSpace;</td>
+            <td colspan="1">Calories:</td>
+            <td>2,000</td>
+            <td>2,500</td>
+          </tr>
 
-        <tr>
-          <td>Total Fat</td>
-          <td>Less than</td>
-          <td>65g</td>
-          <td>80g</td>
-        </tr>
+          <tr>
+            <td>Total Fat</td>
+            <td>Less than</td>
+            <td>65g</td>
+            <td>80g</td>
+          </tr>
 
-        <tr>
-          <td>&emsp;&ensp;Sat Fat</td>
-          <td>Less than</td>
-          <td>20g</td>
-          <td>25g</td>
-        </tr>
+          <tr>
+            <td>&emsp;&ensp;Sat Fat</td>
+            <td>Less than</td>
+            <td>20g</td>
+            <td>25g</td>
+          </tr>
 
-        <tr>
-          <td>Cholesterol</td>
-          <td>Less than</td>
-          <td>300mg</td>
-          <td>300mg</td>
-        </tr>
+          <tr>
+            <td>Cholesterol</td>
+            <td>Less than</td>
+            <td>300mg</td>
+            <td>300mg</td>
+          </tr>
 
-        <tr>
-          <td>Sodium</td>
-          <td>Less than</td>
-          <td>2,400mg</td>
-          <td>2,400mg</td>
-        </tr>
+          <tr>
+            <td>Sodium</td>
+            <td>Less than</td>
+            <td>2,400mg</td>
+            <td>2,400mg</td>
+          </tr>
 
-        <tr>
-          <td colspan="2">Total Carbohydrate</td> <!--Span 2 columns?-->
-          <td>300g</td>
-          <td>375g</td>
-        </tr>
+          <tr>  <!--First td element is causing the whole table to be wider-->
+            <td colspan="1">Total Carbohydrate</td> <!--Span 2 columns?-->
+            <td>&emsp;</td>
+            <td>300g</td>
+            <td>375g</td>
+          </tr>
 
-        <tr>
-          <td colspan="2">&emsp;&ensp;Dietary Fiber</td><!-- Span 2 columns?-->
-          <td>25g</td>
-          <td>30g</td>
-        </tr>
-      </tfoot>
-    </table>
+          <tr>
+            <td colspan="2">&emsp;&ensp;Dietary Fiber</td><!-- Span 2 columns?-->
+            <td>25g</td>
+            <td>30g</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
   </body>
 </html>
