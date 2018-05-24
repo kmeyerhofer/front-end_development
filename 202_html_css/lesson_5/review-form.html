@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Review Form</title>
+
+  </head>
+  <body>
+
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+        <dt><label for="movies">Movie</label></dt>
+        <dd>
+          <select name="movies" id="movies" size="3">
+            <option value="looper">Looper</option>
+            <option value="frozen">Frozen</option>
+            <option value="tommy_boy">Tommy Boy</option>
+            <option value="alien" selected>Alien</option>
+          </select>
+        </dd>
+
+        <dt><label for="rating">Rating</label></dt>
+        <dd>
+          <!-- <select id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select> -->
+          <input type="number" name="rating" id="rating" min="1" max="5">
+        </dd>
+        <dt>
+          <label>
+            <input type="checkbox" value="add_to_favorite" checked>
+            Add to my favorites
+          </label>
+        </dt><dd></dd>
+        </dl>
+        <input type="submit" value="Rate movie">
+      </fieldset>
+    </form>
+
+  </body>
+</html>
