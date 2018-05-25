@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Floats</title>
+    <style>
+    body, section, article, aside {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #cecece;
+    }
+
+    section {
+      background: #fff;
+      max-width: 1000px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    article, aside {
+      padding: 1rem;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    article {
+      width: 70%;
+      background: #aa7;
+      padding-right: 30px;
+    }
+
+    aside {
+      width: 30%;
+      background: #7aa;
+    }
+
+    footer {
+      background: #a3a;
+      display: block;
+      clear: both;
+      padding: 1rem;
+    }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu dui et mauris gravida gravida. Mauris suscipit nisi dapibus, dictum neque vel, lobortis diam. Duis pharetra gravida nunc, ut tristique dui scelerisque et. Fusce non sem dolor. Sed vitae ipsum finibus, sagittis dui faucibus, dictum erat. Nulla pretium congue vulputate. Donec interdum urna quis neque porttitor mollis. Nunc feugiat scelerisque felis at viverra. Nunc tortor ex, feugiat vitae metus facilisis, fringilla ullamcorper leo. Nullam vel urna arcu. Curabitur sagittis eget justo et hendrerit. Vivamus odio justo, luctus id hendrerit id, pellentesque at ex. Maecenas quis felis nisi.
+        </p>
+        <p>
+          Morbi non lacus vulputate massa pretium lobortis. Cras volutpat nec diam eu vulputate. Nam sed ex est. Sed ultrices velit lectus, eget ultrices elit bibendum sit amet. Ut tristique vitae erat vel consequat. Fusce in blandit odio, et rhoncus metus. Donec eu dui luctus, lacinia magna non, convallis risus. Integer non est et mi tincidunt vestibulum sit amet volutpat sem. Donec mi nibh, vulputate ac imperdiet et, iaculis in ligula. Vivamus vel euismod diam. Nunc ut viverra orci. Nulla in ligula in turpis consequat maximus ut non nibh.
+        </p>
+        <p>
+          Nunc sed scelerisque nunc. Nam sit amet lectus consequat, gravida tellus in, consectetur nibh. Nulla porta purus gravida diam maximus mollis. Curabitur mollis a ipsum ut vehicula. Vivamus sit amet dui augue. Praesent ut ante in massa interdum blandit. Ut eleifend metus non rhoncus efficitur. Aenean euismod vulputate ex non ultricies. Curabitur eu augue id nisl feugiat elementum. Vivamus pellentesque tortor ac mauris aliquet vestibulum. Vivamus lacinia, ligula sit amet pretium ultricies, lorem ligula vestibulum lacus, eu imperdiet ligula massa sollicitudin ex. Quisque pulvinar ex vitae leo euismod, a aliquam orci euismod.
+        </p>
+        <p>
+          Etiam a ultricies ante. Proin vitae leo tempor, imperdiet orci eu, gravida nisl. Cras lacinia varius sapien in mollis. Integer eleifend, tortor sed accumsan aliquam, enim nisl euismod libero, sodales ultrices sapien nisi gravida erat. Nunc volutpat tellus vitae vestibulum congue. Nullam enim libero, aliquam quis lobortis ut, molestie sed nunc. Quisque vitae consequat mauris.
+        </p>
+        <p>
+          Ut dictum maximus posuere. Nunc neque felis, eleifend vel nisi id, condimentum ornare arcu. Nulla fermentum magna in porttitor imperdiet. Mauris efficitur dictum justo ut pulvinar. Aenean iaculis purus vitae justo ornare, eu blandit lacus sagittis. Proin tempus semper nibh ut egestas. Vivamus facilisis magna felis, sit amet luctus tellus blandit in. Ut iaculis nisl nulla, et cursus tortor dignissim in. Donec sit amet suscipit ipsum, a rhoncus risus. Phasellus ut eleifend tortor, eu pharetra libero.
+        </p>
+      </article>
+
+      <aside>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis erat quam. Aenean non elementum ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. In tincidunt sit amet ex vitae malesuada. Quisque scelerisque lectus vitae tellus placerat, nec malesuada est sagittis. Donec ac arcu egestas, sodales nisl quis, porttitor metus. Donec ultricies turpis ultricies quam commodo, in dignissim augue faucibus. Aliquam nec ornare tellus.
+        </p>
+        <p>
+          Aliquam augue lectus, molestie sit amet erat tempor, commodo pellentesque felis. Curabitur rutrum posuere enim, eget lacinia metus convallis et. Mauris sagittis purus eget diam finibus auctor. Suspendisse tincidunt a urna nec ullamcorper. Curabitur pharetra, lorem sit amet hendrerit convallis, neque orci ultricies orci, vitae laoreet turpis nunc eget risus. Curabitur vel magna non ipsum tempor fermentum ac a nisl. Proin quis sodales velit, vitae viverra dui. Aenean eleifend velit a efficitur pellentesque. Integer eu est orci. Nunc faucibus, tortor a feugiat consequat, nulla risus porta eros, at accumsan mi turpis sed mauris. In augue lorem, pretium id porttitor vel, condimentum sed nisi.
+        </p>
+        <!-- <p>
+          Cras in consequat lorem, dictum auctor augue. Suspendisse hendrerit mattis ipsum. Nullam ultrices varius massa, faucibus pretium nisi volutpat at. Mauris laoreet aliquam nisi et pharetra. Etiam elementum cursus nisi, eget efficitur ex dignissim quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In id dignissim ligula. Donec vehicula vel nisl at vestibulum. Praesent hendrerit rutrum augue, in accumsan leo rutrum eu. Pellentesque pretium faucibus velit ut sollicitudin. Aenean vitae velit ligula. Suspendisse potenti. Vestibulum a consequat turpis, ultricies dictum erat. Proin tempus interdum lorem. Proin feugiat sed justo vel pretium.
+        </p> -->
+      </aside>
+      <footer>
+        <p>
+          Exercitation elit voluptae exepteur aliquip elit. Eu dolore eu sint. Elit non esse elit pariatur amet dolor aliqua culpa ad nisi. Occaecat incididunt commodo excepteur occaecat velit sint cupidatat voluptae dolor aliqua exercitation.
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>
