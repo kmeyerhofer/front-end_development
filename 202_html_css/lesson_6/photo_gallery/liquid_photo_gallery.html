@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
+
     <style>
       * {
         margin: 0;
@@ -21,10 +23,9 @@
         margin: 15px;
       }
 
-      section {
+      main {
         background-color: #333;
         margin: 0 auto;
-        min-width: 500px;
         max-width: 1000px;
       }
 
@@ -35,7 +36,6 @@
       .large-image {
         border: 8px solid white;
         width: 100%;
-        display: inline-block;
         box-sizing: border-box;
       }
 
@@ -43,25 +43,88 @@
         font-size: .75rem;
       }
 
-      .gallery {
-        display: flex;
-        justify-content: space-between;
+      aside {
         padding-bottom: 10px;
         margin: 15px 15px;
       }
 
-      .gallery img {
+      .gallery {
+        justify-content: space-between;
+        align-content: space-between;
+        display: flex;
+        list-style: none;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .gallery li img {
+        width: 100%;
+      }
+
+      .gallery li {
         border: 2px solid white;
-        flex-basis: 23%;
+      }
+
+      @media screen and (max-width: 599px) {
+        .gallery {
+          flex-wrap: wrap;
+        }
+
+        .gallery li {
+          flex-basis: 47%;
+          margin-top: 8px;
+        }
+      }
+
+      @media screen and (min-width: 600px) and (max-width: 899px) {
+        .gallery {
+          flex-wrap: wrap;
+        }
+
+        .gallery li {
+          flex-basis: 30%;
+          margin-top: 8px;
+        }
+      }
+
+      @media screen and (min-width: 900px) and (max-width: 1279px) {
+        .gallery li {
+          flex-basis: 23%;
+        }
+      }
+
+      @media screen and (min-width: 1280px) {
+        main {
+          max-width: none;
+        }
+
+        section {
+          display: flex;
+          max-width: none;
+          margin: 15px auto;
+        }
+
+        figure {
+          flex-shrink: 0;
+          width: 950px;
+          max-width: 950px;
+        }
+
+        .gallery {
+          flex-direction: column;
+          align-content: space-between;
+          max-width: 950px;
+        }
       }
     </style>
   </head>
   <body>
-    <section>
+    <main>
       <header>
         <h1>My Photo Gallery</h1>
       </header>
 
+      <section>
       <figure>
       <img class="large-image" src="stream-bridge.jpeg"
         alt="A small waterfall underneath a bridge in a lush green forest."
@@ -71,20 +134,31 @@
         </figcaption>
       </figure>
 
-      <aside class="gallery">
-        <img src="Azerbaijan_forest_3.JPG"
-             alt="A dense forest of tall vertical trees."
-             title="A dense forest of tall vertical trees.">
-        <img src="forest.jpeg"
-             alt="A lush forest with rays of sun breaking through the treetops."
-             title="A lush forest with rays of sun breaking through the treetops.">
-        <img src="mountain.jpeg"
-             alt="Rocks atop a mountain peaking through the snow."
-             title="Rocks atop a mountain peaking through the snow.">
-        <img src="Road-Garden-Track-1200-x-900.jpg"
-             alt="Trees lining a winding dirt road."
-             title="Trees lining a winding dirt road.">
+      <aside>
+        <ul class="gallery">
+          <li>
+            <img src="Azerbaijan_forest_3.JPG"
+                 alt="A dense forest of tall vertical trees."
+                 title="A dense forest of tall vertical trees.">
+          </li>
+          <li>
+            <img src="forest.jpeg"
+                 alt="A lush forest with rays of sun breaking through the treetops."
+                 title="A lush forest with rays of sun breaking through the treetops.">
+          </li>
+          <li>
+            <img src="mountain.jpeg"
+                 alt="Rocks atop a mountain peaking through the snow."
+                 title="Rocks atop a mountain peaking through the snow.">
+          </li>
+          <li>
+            <img src="Road-Garden-Track-1200-x-900.jpg"
+                 alt="Trees lining a winding dirt road."
+                 title="Trees lining a winding dirt road.">
+          </li>
+        </ul>
       </aside>
     </section>
+  </main>
   </body>
 </html>
