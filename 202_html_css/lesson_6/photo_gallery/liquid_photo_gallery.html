@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Photo Gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #000;
+        color: #fff;
+        font: 16px sans-serif;
+      }
+
+      header {
+        padding: 15px;
+        text-align: center;
+        margin: 15px;
+      }
+
+      section {
+        background-color: #333;
+        margin: 0 auto;
+        min-width: 500px;
+        max-width: 1000px;
+      }
+
+      figure {
+        margin: 0 15px;
+      }
+
+      .large-image {
+        border: 8px solid white;
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+
+      figcaption {
+        font-size: .75rem;
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin: 15px 15px;
+      }
+
+      .gallery img {
+        border: 2px solid white;
+        flex-basis: 23%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>My Photo Gallery</h1>
+      </header>
+
+      <figure>
+      <img class="large-image" src="stream-bridge.jpeg"
+        alt="A small waterfall underneath a bridge in a lush green forest."
+        title="A small waterfall underneath a bridge in a lush green forest.">
+        <figcaption>
+          A small waterfall underneath a bridge in a lush green forest.
+        </figcaption>
+      </figure>
+
+      <aside class="gallery">
+        <img src="Azerbaijan_forest_3.JPG"
+             alt="A dense forest of tall vertical trees."
+             title="A dense forest of tall vertical trees.">
+        <img src="forest.jpeg"
+             alt="A lush forest with rays of sun breaking through the treetops."
+             title="A lush forest with rays of sun breaking through the treetops.">
+        <img src="mountain.jpeg"
+             alt="Rocks atop a mountain peaking through the snow."
+             title="Rocks atop a mountain peaking through the snow.">
+        <img src="Road-Garden-Track-1200-x-900.jpg"
+             alt="Trees lining a winding dirt road."
+             title="Trees lining a winding dirt road.">
+      </aside>
+    </section>
+  </body>
+</html>
