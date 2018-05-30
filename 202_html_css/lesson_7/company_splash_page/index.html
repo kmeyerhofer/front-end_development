@@ -5,56 +5,105 @@
     <title>Space Design</title>
     <style>
     body {
-      background-image: url('bg_body.gif');
+      background: #2f2840 url('bg_body.gif');
+      padding: 0;
+      margin: 0;
+      font: 18px sans-serif;
     }
 
     main {
       background-color: #fff;
+      max-width: 1000px;
+      margin: 0 auto;
+      min-width: 500px;
+      padding-bottom: 65px;
+      text-align: center;
+    }
+
+    header {
+      margin: 160px 0 90px 0;
+    }
+
+    header img {
+      display: block;
+      margin: 0 auto;
     }
 
     footer {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 1000px;
+      min-width: 500px;
       background-color: #e7e7e7;
+      /* padding: 65px 30px 30px 30px; */
+      padding: 30px;
+    }
+
+    figure {
+      margin: 0 auto;
+      display: flex;
+      width: 400px;
+      justify-content: space-between;
+    }
+
+    .about-us {
+      padding: 100px 0;
     }
 
     h1 {
+      font-size: 34px;
       color: #0ebfdd;
+      font-weight: normal;
     }
 
     h2 {
       color: #3e98b2;
+      font-weight: normal;
+      font-size: 22px;
     }
 
     p {
       color: #45494d;
+      margin-top: 30px;
+      padding: 0 95px;
+      line-height: 1.5;
     }
+
+    .founder {
+      margin-top: 60px;
+    }
+
+
     </style>
   </head>
   <body>
     <header>
-      <img src="logo.png" alt="Space Design Logo"> <!-- 500px high -->
+      <img src="logo.png" alt="Space Design Logo">
     </header>
 
     <main>
-      <article>
+      <article class="about-us">
         <h1>&bull; About Us &bull;</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure in.
         </p>
       </article>
 
-      <article>
+      <article class="founder">
         <h1>&bull; Our Founder &bull;</h1>
         <h2>Admiral Kerning</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
         </p>
       </article>
-
-      <footer>
-        <img src="icon_twitter.png" alt="Twitter Logo Icon">
-        <img src="icon_facebook.png" alt="Facebook Logo Icon">
-        <img src="icon_email.png" alt="Email Icon">
-      </footer>
     </main>
+
+    <footer>
+      <figure>
+        <a href="#"><img src="icon_twitter.png" alt="Twitter Logo Icon"></a>
+        <a href="#"><img src="icon_facebook.png" alt="Facebook Logo Icon"></a>
+        <a href="#"><img src="icon_email.png" alt="Email Icon"></a>
+      </figure>
+    </footer>
   </body>
 </html>
