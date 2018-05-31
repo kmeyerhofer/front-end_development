@@ -76,6 +76,18 @@ main p {
   margin: 0 auto;
 }
 
+img.app {
+  margin: 35px 0 0 0;
+}
+
+img.moment {
+  margin: 110px 0 20px 0;
+}
+
+img.map {
+  margin: 110px 0 20px 0;
+}
+
 footer {
   background-color: #e7e7e7;
   margin: 0;
