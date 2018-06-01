@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: purple;
+  font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -86,6 +87,31 @@ img.moment {
 
 img.map {
   margin: 110px 0 20px 0;
+}
+
+main ul {
+  list-style: none;
+}
+
+main li {
+  display: inline-block;
+  margin: 130px 30px 0 30px;
+}
+
+main li a {
+  text-decoration: none;
+}
+
+.grey-layer {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section img {
+  display: inline;
 }
 
 footer {
