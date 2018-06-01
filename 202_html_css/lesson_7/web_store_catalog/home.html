@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Paramiicio Web Store</title>
+    <style>
+    body {
+      background-color: #ffd505;
+      font-family: sans-serif;
+    }
+
+    header,
+    main {
+      width: 900px;
+    }
+
+    header {
+      background-color: #047ec1;
+      color: #fff;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+      padding: 35px 0 35px 20px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    main {
+      box-sizing: border-box;
+      margin: 30px auto 0 auto;
+      background-color: #ececec;
+      padding: 30px 25px 25px 25px;
+    }
+
+    main section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    .product-background {
+      display: block;
+      box-sizing: border-box;
+      width: 200px;
+      height: 235px;
+      background-color: #fff;
+      margin-bottom: 16px;
+      /* margin: 7px; */
+      padding: 10px 15px 20px 15px;
+    }
+
+    .product-background img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: 75%;
+      padding: 0;
+    }
+
+    .product-background:nth-child(n+1):nth-child(-n+3),
+    .product-background:nth-child(5) {
+      margin-right: 16px;
+    }
+
+    h3 {
+      margin: 15px 0 0 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    div a {
+      margin: 0;
+      padding: 0;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Paramiicio</h1>
+    </header>
+
+    <main>
+      <h2>All Products</h2>
+      <section>
+        <div class="product-background">
+          <a href="#"><img src="images/aurelia.jpg" alt="aurelia"></a>
+          <h3>Aurelia</h3>
+          <p>$12.99</p>
+        </div>
+        <div class="product-background">
+          <a href="#"><img src="images/polycaryum.jpg" alt="polycaryum"></a>
+          <h3>Polycaryum</h3>
+          <p>$12.99</p>
+        </div>
+        <div class="product-background">
+          <a href="#"><img src="images/chlorelligerum.jpg" alt="chlorelligerum"></a>
+          <h3>Chlorelligerum</h3>
+          <p>$12.99</p>
+        </div>
+        <div class="product-background">
+          <a href="#"><img src="images/sonneborni.jpg" alt="sonneborni"></a>
+          <h3>Sonneborni</h3>
+          <p>$12.99</p>
+        </div>
+        <div class="product-background">
+          <a href="#"><img src="images/ugandae.jpg" alt="ugandae"></a>
+          <h3>Ugandae</h3>
+          <p>$12.99</p>
+        </div>
+        <div class="product-background">
+          <a href="#"><img src="images/woodruffi.jpg" alt="woodruffi"></a>
+          <h3>Woodruffi</h3>
+          <p>$12.99</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
