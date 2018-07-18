@@ -8,5 +8,5 @@ var myObject = {
 };
 
 myObject[1];
-myObject[a];
+myObject[a]; // Reference error, variable a
 myObject.a;
